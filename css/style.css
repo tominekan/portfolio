@@ -97,6 +97,7 @@ footer {
     flex-direction: column;
     background-color: black;
     border-radius: 12.5px;
+    margin-bottom: 25px;
 }
 
 .credit-container {
