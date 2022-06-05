@@ -4,8 +4,6 @@ var nameField = document.getElementById("name-input");
 var emailField = document.getElementById("email-input");
 var messageField = document.getElementById("message-input");
 
-console.log(nameField, emailField, messageField, submitBtn);
-
 function validateFormInputs() {
     console.log("validating")
     if (nameField.value.trim() && emailField.value.trim() && messageField.value.trim()) {
@@ -18,4 +16,3 @@ nameField.addEventListener("change", validateFormInputs);
 emailField.addEventListener("change", validateFormInputs);
 messageField.addEventListener("change", validateFormInputs);
 
-console.log("everything seems to work")
