@@ -1,0 +1,39 @@
+.project {
+    display: flex;
+    justify-content: center;
+}
+
+.project-img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.project-width {
+    inline-size: 15vw;
+    overflow-wrap: break-word;
+}
+
+.project-wrapper {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-container {
+    display: block;
+    background-color: #222222;
+    border-radius: 25px;
+}
+
+.project-container p {
+    background-color: #222222;
+    border-radius: 25px;
+}
+
+.project-container .small-text {
+    font-weight: 600;
+}

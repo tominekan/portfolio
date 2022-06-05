@@ -1,0 +1,41 @@
+
+/* Styles for Intro */
+#intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#intro-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-text {
+    background-color: black;
+}
+
+.see-more-prompt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.see-more-prompt:hover > #see-more-text {
+    color: black;
+}
+
+#see-more-text {
+    margin: 7.5px;
+    background-color: black;
+}
+
+#see-more-finger {
+    width: clamp(7.5px, 2.5vw, 36px);
+    height: 5vw;
+    max-width: 36px;
+    max-height: 36px;
+    background-color: black;
+}
