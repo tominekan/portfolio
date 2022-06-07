@@ -67,7 +67,7 @@
 }
 
 #submit-input {
-    width: calc(31vw + 20px);
+    width: 32vw;
     height: 35px;
     background-color: #555555;
     margin-top: 7.5px;
