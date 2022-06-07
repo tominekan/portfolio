@@ -11,6 +11,9 @@
     --number-slides: 1;
 }
 
+*:focus {
+    border: 1.5px solid white;
+}
 html {
     background-color: #222222;
 }
