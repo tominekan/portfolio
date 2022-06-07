@@ -39,6 +39,10 @@
     resize: none;
 }
 
+#message-input:focus {
+    border: 1px solid white;
+}
+
 ::placeholder {
     color: rgb(190, 190, 190);
 }
