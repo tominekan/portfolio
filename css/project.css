@@ -32,3 +32,7 @@
 .project-container .small-text {
     font-weight: 600;
 }
+
+.project-container a {
+    background: none;
+}

@@ -8,6 +8,7 @@
 
 #intro-img {
     height: 100%;
+    max-width: 70%;
     object-fit: cover;
 }
 
