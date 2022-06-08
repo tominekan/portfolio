@@ -1,0 +1,19 @@
+#intro {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+}
+
+#intro-img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#intro-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

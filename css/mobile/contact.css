@@ -1,0 +1,108 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.social-media {
+    margin-top: 15vw;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-input {
+    color: white;
+    background-color: #555555;
+    border-radius: 5px;
+    width: 60vw;
+    height: 30px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 15px;
+    padding-left: 7.5px;
+}
+
+#message-input {
+    color: white;
+    background-color: #555555;
+    border-radius: 5px;
+    width: 60vw;
+    height: 150px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    padding-left: 7.5px;
+    padding-top: 5px;
+    resize: none;
+}
+
+#message-input:focus {
+    border: 1px solid white;
+}
+
+::placeholder {
+    color: rgb(190, 190, 190);
+}
+
+:focus {
+    outline: none;
+}
+
+:focus::placeholder {
+    color: transparent;
+}
+
+.short-input {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.media-link {
+    width: 36px;
+    height: 36px;
+    margin-right: 1vw;
+}
+
+.media-link:hover {
+    background-color: #555555;
+    border-radius: 100px;
+}
+
+#submit-input {
+    width: 32vw;
+    height: 35px;
+    background-color: #555555;
+    margin-top: 7.5px;
+    border-radius: 5px;
+}
+
+#submit-input:hover {
+    background-color: rgb(190, 190, 190);
+    transition-duration: 300ms;
+}
+
+#submit-input:focus {
+    background: 1.5px solid white;
+}
+
+#submit-input:disabled {
+    background-color: #222222;
+    border: none;
+}
+
+#submit-input:disabled:hover {
+    background-color: #222222;
+    outline: none;
+}
+
+/* NICE RED #de4d4f */

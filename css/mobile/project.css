@@ -1,0 +1,50 @@
+#project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-img {
+    width: 50vw;
+    height: 12.5vh;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.project-width {
+    margin-bottom: 5px;
+    text-align: center;
+    inline-size: 45vw;
+    overflow-wrap: break-word;
+}
+
+.project-wrapper {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.project-container p {
+    text-align: center;
+    background-color: #222222;
+    border-radius: 25px;
+}
+
+.project-container .small-text {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 600;
+}

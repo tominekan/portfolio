@@ -1,0 +1,77 @@
+* {
+    color: white;
+    background-color: black;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+.big-text {
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 10vh;
+}
+
+.medium-text {
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 4.5vh;
+}
+
+.small-text {
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 2.5vh;
+}
+
+.mini-text {
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 2.5vh;
+}
+
+.section-text {
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 10vh;
+    margin-top: 1vh;
+    text-decoration: underline;
+}
+
+.tiny-text {
+    font-family: "Inter", sans-serif;
+    font-size: 2vh;
+    color: rgb(190, 190, 190);
+}
+
+
+footer {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 12.5px;
+    margin-bottom: 15px;
+}
+
+.credit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    scroll-snap-align: start;
+}
+
+.footer-title {
+    display: block;
+}
+
+.credit-item {
+    margin-right: 10px;
+}
