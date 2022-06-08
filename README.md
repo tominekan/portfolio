@@ -6,3 +6,4 @@ Goals in the future to improve it (very far future)
 - [ ] Replace projects with better ones hopefully
 - [ ] Perhaps update the "Sport" photo with a better one
 - [ ] Add a nice "Word Cloud" showing all the technologies I use and am familiar with (interactive cuz it turns a brighter color when each word is highlighted)
+- [ ] Add a tidbit on academics bring up (PSAT, GPA and math class)
