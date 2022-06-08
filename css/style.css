@@ -1,122 +1,16 @@
 /* GET THEM CSS IMPORTS */
-@import "reset.css";
-@import "intro.css";
-@import "about.css";
-@import "project.css";
-@import "contact.css";
+@import "reset.css"; /* ALWAYS USE CSS RESET */
 
-* {
-    background-color: black;
-    color: white;
-    --number-slides: 1;
-}
+/* REGULAR LAYOUT */
+@import "body.css" screen and (min-width: 750px);
+@import "intro.css" screen and (min-width: 750px);
+@import "about.css" screen and (min-width: 750px);
+@import "project.css" screen and (min-width: 750px);
+@import "contact.css" screen and (min-width: 750px);
 
-*:focus {
-    border: 1.5px solid white;
-}
-
-
-html {
-    background-color: #222222;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #222222;
-}
-
-/* SCROLL SNAP THINGY */
-html, body {
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-}
-
-/* General styling */
-.slideshow {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    align-items: center;
-    background: none;
-}
-
-.slide {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #222222;
-    width: 99vw;
-    height: 100vh;
-    scroll-snap-align: start;
-}
-
-.card {
-    border-radius: 25px;
-    text-align: center;
-    width: 95%;
-    height: 92.5%;
-}
-
-.big-text {
-    font-family: "Smooch Sans", sans-serif;
-    font-size: 7vw;
-}
-
-.medium-text {
-    font-family: "Smooch Sans", sans-serif;
-    font-size: 2.5vw;
-}
-
-.small-text {
-    font-family: "Smooch Sans", sans-serif;
-    font-size: 1.5vw;
-}
-
-.mini-text {
-    font-family: "Smooch Sans", sans-serif;
-    font-size: 1vw;
-}
-
-.section-text {
-    font-family: "Smooch Sans", sans-serif;
-    font-size: 4vw;
-    margin-top: 4vw;
-    text-decoration: underline;
-}
-
-.tiny-text {
-    font-family: "Inter", sans-serif;
-    font-size: 1vw;
-    color: rgb(190, 190, 190);
-}
-
-footer {
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: black;
-    border-radius: 12.5px;
-    margin-bottom: 25px;
-}
-
-.credit-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    scroll-snap-align: start;
-}
-
-.footer-title {
-    display: block;
-}
-
-.credit-item {
-    margin-right: 10px;
-}
+/* MOBILE LAYOUT */
+@import "mobile/body.css" screen and (max-width: 750px);
+@import "mobile/intro.css" screen and (max-width: 750px);
+@import "mobile/about.css" screen and (max-width: 750px);
+@import "mobile/project.css" screen and (max-width: 750px);
+@import "mobile/contact.css" screen and (max-width: 750px);
