@@ -83,6 +83,10 @@
     transition-duration: 300ms;
 }
 
+#submit-input:focus {
+    background: 1.5px solid white;
+}
+
 #submit-input:disabled {
     background-color: #222222;
     border: none;

@@ -21,16 +21,56 @@ function validateFormInputs() {
 nameField.addEventListener("change", validateFormInputs);
 emailField.addEventListener("change", validateFormInputs);
 messageField.addEventListener("change", validateFormInputs);
+submitBtn.addEventListener("onclick", () => alert("Clicked"))
 
+var mailData = {
+    "access_token": "bekgf5t95omyqd34grnu679n"
+};
 
-function sendMail() {
-    if (validateFormInputs()) {
-        let subject = "Message from " + nameField.value;
-        let email = emailField.value;
-        let message = messageField.value;
-        emaijs.init("tpSKAIqpao8K6bz2R");
-        emailjs.sendForm('contact_service', 'contact-form', 12);
+function showSuccess() {
+    alert("Successfully sent!");
+}
+
+function showError(error) {
+    alert("Could not send mail, please try again. \nError Code: " + error);
+}
+
+function sendEmail() {
+    submitBtn.setAttribute("disabled", "disabled");
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+        if (request.readyState == 4 && request.status == 200) {
+            showSuccess();
+        } else
+        if(request.readyState == 4) {
+            showError(request.response);
+        }
     }
+
+    // Subject and message for email
+    var subject = `From ${nameField.value}: email ${emailField.value}`
+    var message = messageField.value
+
+    mailData['subject'] = subject;
+    mailData['text'] = message;
+    var params = toParams(mailData);
+
+    request.open("POST", "https://postmail.invotes.com/send", true);
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    request.send(params);
+
+    return false;
 }
 
 
+submitBtn.onclick = sendEmail;
+
+function toParams(data_js) {
+    var form_data = [];
+    for ( var key in data_js ) {
+        form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+    }
+
+    return form_data.join("&");
+}
