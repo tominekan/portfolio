@@ -23,9 +23,6 @@ emailField.addEventListener("change", validateFormInputs);
 messageField.addEventListener("change", validateFormInputs);
 submitBtn.addEventListener("onclick", () => alert("Clicked"))
 
-var mailData = {
-    "access_token": "bekgf5t95omyqd34grnu679n"
-};
 
 function showSuccess() {
     alert("Successfully sent!");
