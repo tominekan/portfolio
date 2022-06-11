@@ -1,5 +1,5 @@
 "use strict"
-import mailData from "config.js" // Import API keys
+import mailData from "/config.js" // Import API keys
 
 // Make sure that all inputs are filled out 
 var submitBtn = document.getElementById("submit-input");
