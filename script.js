@@ -1,3 +1,4 @@
+"use strict"
 // Make sure that all inputs are filled out 
 var submitBtn = document.getElementById("submit-input");
 var nameField = document.getElementById("name-input");
@@ -22,10 +23,6 @@ nameField.addEventListener("change", validateFormInputs);
 emailField.addEventListener("change", validateFormInputs);
 messageField.addEventListener("change", validateFormInputs);
 submitBtn.addEventListener("onclick", () => alert("Clicked"))
-
-var mailData = {
-    "access_token": "bekgf5t95omyqd34grnu679n"
-};
 
 
 function showSuccess() {
