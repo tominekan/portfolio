@@ -1,5 +1,5 @@
 # portfolio
-A revamped portfolio website. This is the fruits of my labor.
+A revamped portfolio website. This is the fruits of my labor. (This is very old lmao)
 
 Goals in the future to improve it (very far future)
 - [ ] Include more interactive elements/graphic elements
